@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
-<title>Asteroid</title>
-<link href="./css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <canvas id="gameView"></canvas>
-    <a id="startGame"> Start </a>
-    <a id="help"> Help </a>
-    <div id="score"></div>
-    
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <title>Asteroid</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
 
-</body>
-<script src="./js/minbundle.js"></script>
+    <canvas id="starField" class="cavasView domobj"></canvas>
+    <div id=message" class="domobj">
+    </div>
+    <div id="scoreView" class="domobj slides">
+      <div id="endGameStats" class="domobj">
+      </div>
+      <div id="closeStats" class="domobj button"> Okay </div>
+    </div>
+    <div id="gamePlayingView" class="domobj slides">
+      <div id="score" class="domobj"></div>
+      <canvas id="gameView" class="cavasView domobj"></canvas>
+    </div>
+    <ul id="pausedView" class="domobj slides">
+      <li id="resumeGame" class="domobj button"> Resume Game </li>
+      <li id="quitGame" class="domobj button"> Quit Game </li>
+    </ul>
+    <ul id="mainMenu" class="domobj slides">
+      <li id="startGame" class="domobj button"> Start </li>
+      <li id="help" class="domobj button"> Help </li>
+    </ul>
+
+
+  </body>
+  <script src="./js/bundle.js"></script>
+
+
 </html>

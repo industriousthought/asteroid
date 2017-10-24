@@ -1,1 +1,1 @@
-browserify --debug ./js/main.js > ./js/bundle.js
+browserify --debug ./src/main.js > ./js/bundle.js
